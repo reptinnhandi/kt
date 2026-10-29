@@ -6859,7 +6859,7 @@ body.tiny-finale-active #khung-mat,body.tiny-finale-active #tiny-sky{opacity:0!i
     if(box) return;
     box=document.createElement('div'); box.id='tf-gate'; box.setAttribute('role','status');
     var when=new Date(openAt).toLocaleString('vi-VN',{day:'numeric',month:'numeric',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Ho_Chi_Minh'});
-    box.innerHTML='<h1>Không còn quyền hạn để mở </h1><div>sống như 1 con rối vậy á <div><div><b>'+when+'</b></div><div class="cd" id="tf-gate-cd"></div><small id="tf-gate-sm">Cái lốp hoàn lương:))</small>';
+    box.innerHTML='<h1>Không còn quyền hạn để mở </h1><div> Cái lốp hoàn lương:)) <div><div><b>'+when+'</b></div><div class="cd" id="tf-gate-cd"></div><small id="tf-gate-sm"></small>';
     document.body.appendChild(box);
     cd=box.querySelector('#tf-gate-cd'); sm=box.querySelector('#tf-gate-sm');
   }
