@@ -6832,7 +6832,7 @@ body.tiny-finale-active #khung-mat,body.tiny-finale-active #tiny-sky{opacity:0!i
 <script id="tf-gate-js">
     (function(){
   // ĐỔI GIỜ MỞ Ở ĐÂY: năm-tháng-ngàyTgiờ:phút:giây+múi giờ (+07:00 là giờ Việt Nam)
-  var TF_OPEN_AT='2026-10-20T00:00:00+07:00';
+  var TF_OPEN_AT='2112-10-20T00:00:00+07:00';
   var openAt=Date.parse(TF_OPEN_AT);
   if(isNaN(openAt)) return;
 
@@ -6859,7 +6859,7 @@ body.tiny-finale-active #khung-mat,body.tiny-finale-active #tiny-sky{opacity:0!i
     if(box) return;
     box=document.createElement('div'); box.id='tf-gate'; box.setAttribute('role','status');
     var when=new Date(openAt).toLocaleString('vi-VN',{day:'numeric',month:'numeric',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Ho_Chi_Minh'});
-    box.innerHTML='<h1>Không còn quyền hạn để mở </h1><div>Món quà sẽ mở vào lúc</div><div><b>'+when+'</b></div><div class="cd" id="tf-gate-cd"></div><small id="tf-gate-sm">Quay lại đúng giờ nhé</small>';
+    box.innerHTML='<h1>Không còn quyền hạn để mở </h1><div>sống như 1 con rối vậy á <div><div><b>'+when+'</b></div><div class="cd" id="tf-gate-cd"></div><small id="tf-gate-sm">Cái lốp hoàn lương:))</small>';
     document.body.appendChild(box);
     cd=box.querySelector('#tf-gate-cd'); sm=box.querySelector('#tf-gate-sm');
   }
